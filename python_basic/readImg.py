@@ -1,4 +1,5 @@
 import cv2
+import numpy
 
 image = cv2.imread('lena.jpg')
 cv2.imwrite('MyPic.jpg',image)
