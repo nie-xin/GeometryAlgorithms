@@ -1,5 +1,5 @@
 import cv2
-import numpy as np 
+import numpy as np
 
 drawing = False
 mode = True		# True for rectangle
@@ -39,3 +39,4 @@ while(1):
 		break
 
 cv2.destroyAllWindows()
+

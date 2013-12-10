@@ -1,0 +1,27 @@
+##2 type of shape descriptor:
+1. contour-based shape descriptor - exploit only bundary information, they cannot capture shape interior content. They cannot deal with disjoint shaps coz contour information is not avaiable
+2. region-based shap descriptor - descriptors are drived using all pxiel information within a shap region, so they can be applied to general applications.
+
+Problem:
+ZMD does not effectively capture shape features in radial directions.
+
+generic Fourier descriptor - GFD is acquired by applying a modified polar Fourier transform on a rectangularized polar shape image.
+
+Advantage: he acquired GFD captures shape features well in both radial and circular directions, it is more robust than ZMD.
+
+Disadvantage: Since GFD is acquired from polar image, the concentric circular scanning in the feature extraction process causes inaccurate description for severely skewed or stretched shapes (which are common in natural shapes).
+
+Solution -> enhanced GFD which is acquired from a rotation and scale normalized shape.
+
+###GFD
+High performance on rotation invariance test, scale invariance test and rotation-scale invariance test
+Low performance on perspective transform test and general distortion test
+-> reason: severe skew or stretching occur, the shape region distribution within the circle the shape resides in changed largely.
+
+
+
+###词汇
+polar - 极坐标
+radial frequency - 径向频率
+angular frequency - 角频率
+severe skew - 严重倾斜
